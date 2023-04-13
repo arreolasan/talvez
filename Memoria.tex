@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%%% preambulo
+\documentclass[carta]{memoria}
+\usepackage{anysize}
+\usepackage{doc}
+\usepackage[latin1]{inputenc} 
+\usepackage[pdftex]{color,graphicx}
+\marginsize{3cm}{2.5cm}{2cm}{1.5cm}
+
+%%%%%%%%%%%%%%%% datos usados en el documento
+\newcommand{\NombreT}{``Nombre del proyecto''}
+\newcommand{\Alumno}{Nombre ApellidoP ApellidoM}
+\newcommand{\noControl}{12345678}
+\newcommand{\FechaEntrega}{abril 2023}
+\newcommand{\AsesorI}{Dr. Nombre y Apellidos}
+\newcommand{\AsesorE}{Ing. Nombre y Apellidos}
+
+%%%%%%%%%%%%%%%% palabras que corte mal el latex (ver notas de: LEEME informacion.txt)
+\hyphenation{re-pre-sen-tar-lo a-pro-xi-ma-da-men-te}
+
+%%%%%%%%%%%%%%%% comienza el documento, portada
+\begin{document}
+\pagestyle{empty}
+\portada
+\frontmatter
+\pagestyle{plain}
+
+%%%%%%%%%%%%%%%% Hoja de agradecimientos
+%pocos documentos anexan esta parte, sugiero solo agregar en caso de:
+%   préstamo de equipo especial
+%   o beca por parte de alguna institución:
+%\addcontentsline{toc}{section}{Agradecimientos}
+%.\par \vspace{3cm}
+%\begin{flushright}
+%\Large\textsc{Agradecimientos}
+%\end{flushright}
+%Mi agradecimiento a... por el prestamo del laboratorio ...\\
+%
+%Este trabajo fue financiado por CONACYT con la beca de manuntención No. XXX-cb (Enero 2022- Junio 2022).
+%\sigpag
+
+%%%%%%%%%%%%%%%% Resumen (ver notas de: LEEME informacion.txt)
+.\par \vspace{3cm}
+\begin{flushright}
+\Large\textsc{Resumen}
+\end{flushright}
+\section*{\NombreT}
+\addcontentsline{toc}{section}{Resumen}
+\input{resumen.tex}
+\sigpag
+
+%%%%%%%%%%%%%%%% Índices
+\addcontentsline{toc}{section}{Índice de Contenido}
+\tableofcontents \par
+%\sigpag   %si el contenido termina en hoja PAR agregar esta instrucción
+\addcontentsline{toc}{section}{Índice de Figuras}
+\listoffigures \par
+\sigpag   %si el contenido termina en hoja PAR agregar esta instrucción
+\addcontentsline{toc}{section}{Índice de Tablas}
+\listoftables \par
+\sigpag   %si el contenido termina en hoja PAR agregar esta instrucción
+
+%%%%%%%%%%%%%%%%% Glosario
+%%pocos documentos anexan esta parte,
+%%sugiero solo agregar en caso de tener términos diferentes al área de electrónica o biomédica
+%\newpage
+%\addcontentsline{toc}{section}{Glosario}
+%\begin{flushright}
+%\Large\textsc{Glosario}
+%\end{flushright}
+%Término: definición
+%\sigpag   %si el contenido termina en hoja PAR agregar esta instrucción
+
+%%%%%%%%%%%%%%%% cuerpo del documento
+\mainmatter
+\setlength\parskip{6mm}
+\pagestyle{headings}
+{
+\input{cap1.tex}
+\input{cap2.tex}
+\input{cap3.tex}
+\input{cap4.tex}
+
+\begin{thebibliography}{99}
+\addcontentsline{toc}{section}{Referencias}
+\input{referencias.tex}
+\end{thebibliography}
+%\sigpag   %si el contenido termina en hoja PAR agregar esta instrucción
+
+\appendix
+\input{Anexo1.tex}
+\input{Anexo2.tex}
+%%%%%%%%%%%%%%%% colocar los anexos necesarios....
+%\input{Anexo3.tex}
+%\input{Anexo4.tex}
+\par}
+
+\findoc
+\end{document}

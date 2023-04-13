@@ -1,0 +1,110 @@
+\chapter{Marco Teórico}
+
+\section{Introducción}
+El marco teórico debe contener los fundamentos necesarios para llevar a cabo el desarrollo del proyecto.
+Sin caer en un corta-pega y/o una extensión excesiva y dando el crédito que correspondiente a las fuentes consultadas.
+Este capítulo puede ser particionado en dos o tres
+capítulos si los asesores interno y externo deciden que es la mejor opción para organización y
+presentación del documento.
+
+El marco teórico describe las herramientas y técnicas de Ingeniería (Industrial, Sistemas Computacionales, Electromecánica, Mecatrónica) que serán utilizadas para resolver la situación problemática expresada en este trabajo de residencias profesionales.
+Al marco teórico le corresponde la función de orientar y crear las bases teóricas de la investigación.
+El marco teórico no es un resumen  de las teorías que se hayan escrito sobre el tema objeto de la investigación.
+Es una revisión de quienes están investigando o han investigado el tema y los planteamientos de estos autores y cuáles son los principales aspectos por ellos estudiados.
+
+De estas herramientas se debe dar:
+\begin{itemize}
+	\item La definición
+	\item Conceptos
+	\item Historia
+	\item Descripción de los métodos, técnicas, a emplear en la resolución del problema
+	\item Actualidad que existe sobre el tema y resultados que se hallan obtenido, entre otras cosas
+  \item Siempre citando las referencias donde se sustenta lo investigado, ej: ...como se ve en \cite{libr1,capi1,revi1}; sin embargo, en \cite{pagi1} se utilizó ...\\
+\end{itemize}
+%Cuando se utilice referenciar a las fuentes de información, se usa \cite{}
+%el cual cita usando en el formato IEEE mostrado en "referencias",
+%latex da un número automaticamente a las referencias, como se vio en el ultimo item de arriba
+
+\section{Tema 1 investigado}
+Los ... como por ejemplo ...
+
+\subsection{Subtema 1 del Tema 1}
+La parte primaria ... aqui va lo investigado
+
+\subsection{Subtema 2 del Tema 1}
+La parte secundaria ... aqui va lo investigado, y asi sucesivamente
+
+
+\section{Figuras}
+Si se utilizan figuras recordar referenciarlas en el texto,
+he indicar una referencia en caso de que sean tomadas de alguna fuente, ejemplo:
+TEXTO ... cuya pintura se muestra en la Figura \ref{dragon1} \cite{capi1}.
+
+\begin{figure}[hbt!]
+\centering
+\includegraphics[width=0.6\textwidth]{figuras/ciruelo1}
+\caption{Obra del artista Ciruelo.}
+\label{dragon1}
+\end{figure}
+
+\section{Tema 2 investigado}
+Los ... se definen como ...
+
+\subsection{Subtema 1 del Tema 2}
+La parte primaria ... aqui va lo investigado
+
+\subsection{Subtema 2 del Tema 2}
+La parte secundaria ... aqui va lo investigado, y asi sucesivamente
+
+\section{Tablas}
+Si se utilizan tablas recordar referenciarlas en el texto,
+he indicar una referencia en caso de que sean tomadas de alguna fuente.
+Al igual que la palabra Figura, la palabra Tabla también se acostumbra escribirla con mayuscula, ejemplo:
+TEXTO ... en la Tabla \ref{Tuno} \cite{tesis1}.
+Observe que las citas van antes del punto, otro ejemplo de colocar datos en Recuadros se ve en la Tabla \ref{TarjHD}.
+
+\begin{table}[!htb]
+\caption{Tabla a modo de ejemplo.}
+\begin{center}
+\begin{tabular}{|c|r|l|}							%|c|r|l| significa: linea-centrar-linea-derecha-linea-izquierda-linea
+\hline
+\multicolumn{3}{|c|}{uni tres columnas}\\ %para esta linea se cambia |c|r|l| por: |c|
+\hline
+t1&t2&t3\\														%el resto de las lineas sigen el formato |c|r|l|
+\hline
+0&0&0\\
+00&00&00\\
+000&000&000\\
+0000&0000&0000\\
+\hline
+\end{tabular}
+\end{center}
+\label{Tuno}  %con este nombre se referencia en el texto: \ref{Tuno}
+\end{table}
+
+\begin{table}[!htb]
+\caption{Caracteristicas de tarjeta de audio HD.}
+\begin{center}
+\begin{tabular}{|c|l|}
+\hline
+Rango&Caracteristicas\\
+\hline
+ &Flujo de I/O, compatibilidad con escalabilidad\\
+0 - 14 &para el control, enlace (link) y codec diseñada\\
+ &para optimizar el rendimineto y caracteristicas\\
+\hline
+6K Hz y 192K Hz&Frecuencias de muestreo\\
+\hline
+xxxx&yyy\\
+\hline
+ &....\\
+48 Mbps& ...\\
+ &...\\
+\hline
+\end{tabular}
+\end{center}
+\label{TarjHD} %con este nombre se referencia en el texto: \ref{TarjHD}
+\end{table}
+
+%%%%%%%%%%%%%%%% termina el capitulo
+%\sigpag

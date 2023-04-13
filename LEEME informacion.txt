@@ -1,0 +1,20 @@
+Buen día,
+El archivo memoria.tex es el principal, este es el que se debe correr en el LATEX, el llamará a los otros archivos cuando sea necesario. En memoria.tex llenar los datos usados en el documento (título, nombre, matricula, etc.).
+El resumen se realiza en: resumen.tex; como buena práctica esto es lo último que se realizará del reporte. Los capítulo 1, 2, 3 y 4 se realizan en: cap1.tex, cap2.tex, etc; respectivamente. Las referencias bibliográficas y de otros tipos en: referencias.tex y en anexo 1 en Anexo1.tex (si es necesario puede realizar más anexos. A todos estos archivos los llamará memoria.tex y los compilara, no se compilan por separado.
+Biography_IEEE.pdf explica cómo realizar las referencias en formato IEEE.
+
+
+Recomendaciones extra: generalmente trabajar en secciones antes de tiempo generan que el documento tarde más en terminarse. Por ello recomiendo, dejar estas tareas al final o casi al final de la redacción de su memoria de residencia
+1 Realizar los anexos
+2 Escribir las conclusiones y trabajo a Futuro
+3 Realizar el resumen, ya que este debe ser el resumen de toda la residencia, no puede resumir algo que aún no está terminado
+4 Los acabados, es hacer una revisión detallada buscando un buen terminado del documento. En general buscando una buena vista del trabajo, si comienza a hacer estos acabados antes solo terminara trabajando el doble o triple, por eso recomiendo dejarlo al final
+•	Si se desea no tener páginas en blanco (usar o quitar el comando \sigpag)
+•	Corregir los espacios en blanco en las hojas, cambiando de lugar las imágenes, texto o tablas
+•	Corregir las palabras mal cortadas. Para las palabras que separe mal el Latex de una línea a otra: usar \hyphenation en el archivo memoria.tex, allí se separa la palabra mal cortada en silabas y el problema se corregirá. Esto es porque Latex realiza los cortes de línea en inglés y no en español.
+
+
+Alguna recomendación, mejora del reporte, falla del templete, u otro; favor de reportarla a: miguel.duarte@tectijuana.edu.mx
+
+Abril 2023
+Dr. Miguel Duarte

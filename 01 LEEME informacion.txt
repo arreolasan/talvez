@@ -1,0 +1,21 @@
+Buan día,
+
+El archivo memoria.tex es el principal,
+este es el que se debe correr en el LATEX,
+el llamará a los otros archivos cuando sea necesario.
+
+en memoria.tex llenar los datos usados en el documento (titulo, nombre, matricula, etc.)
+el resumen se realiza en: resumen.tex
+los capítulo 1, 2, 3 y 4 se realizan en: cap1.tex, cap2.tex, etc. respectivamente
+las referencias bibliograficas y de otros tipos en: referencias.tex
+y en anexo 1 en Anexo1.tex (si es nesesario puede realizar más anexos)
+todos estos los llamara memoria.tex y los compilara
+
+Biography_IEEE.pdf explica como realizar las referencias en formato IEEE.
+tareas finales.txt son consejos de lo ultimo que debe de realizar en el trabajoexplica que 
+
+cualquier falla o recomendación favor de reportarla a:
+miguel.duarte@tectijuana.edu.mx
+
+28-septiembre-2018
+Dr. Miguel Duarte
